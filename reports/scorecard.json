@@ -1,0 +1,252 @@
+{
+  "high": [
+    {
+      "title": "Base config is insecurely configured to permit clear text traffic to all domains",
+      "description": "Scope:\n*\n\n",
+      "section": "network"
+    },
+    {
+      "title": "Base config is configured to trust user installed certificates",
+      "description": "Scope:\n*\n\n",
+      "section": "network"
+    },
+    {
+      "title": "Base config is configured to bypass certificate pinning",
+      "description": "Scope:\n*\n\n",
+      "section": "network"
+    },
+    {
+      "title": "Domain config is insecurely configured to permit clear text traffic to these domains in scope",
+      "description": "Scope:\nh.facebook.com\nl.facebook.com\nl.alpha.facebook.com\nlm.facebook.com\nl.instagram.com\n\n",
+      "section": "network"
+    }
+  ],
+  "warning": [
+    {
+      "title": "Certificate algorithm might be vulnerable to hash collision",
+      "description": "Application is signed with SHA1withRSA. SHA1 hash algorithm is known to have collision issues. The manifest file indicates SHA256withRSA is in use.",
+      "section": "certificate"
+    },
+    {
+      "title": "Base config is configured to trust system certificates",
+      "description": "Scope:\n*\n\n",
+      "section": "network"
+    },
+    {
+      "title": "App can be installed on a vulnerable Android version",
+      "description": "Android 8.0, minSdk=26]\nThis application can be installed on an older version of android that has multiple vulnerabilities. Support an Android version => 10, API 29 to receive reasonable security updates.",
+      "section": "manifest"
+    },
+    {
+      "title": "Broadcast Receiver (com.facebook.lite.pretos.LiteAppComponentReceiver) is not Protected. ",
+      "description": "[android:exported=true]\nA Broadcast Receiver is found to be shared with other apps on the device therefore leaving it accessible to any other application on the device.",
+      "section": "manifest"
+    },
+    {
+      "title": "Broadcast Receiver (com.facebook.lite.rtc.IncomingCallReceiver) is not Protected. ",
+      "description": "[android:exported=true]\nA Broadcast Receiver is found to be shared with other apps on the device therefore leaving it accessible to any other application on the device.",
+      "section": "manifest"
+    },
+    {
+      "title": "Broadcast Receiver (com.facebook.lite.campaign.CampaignReceiver) is not Protected. ",
+      "description": "[android:exported=true]\nA Broadcast Receiver is found to be shared with other apps on the device therefore leaving it accessible to any other application on the device.",
+      "section": "manifest"
+    },
+    {
+      "title": "Broadcast Receiver (com.facebook.lite.appManager.AppManagerReceiver) is not Protected. ",
+      "description": "[android:exported=true]\nA Broadcast Receiver is found to be shared with other apps on the device therefore leaving it accessible to any other application on the device.",
+      "section": "manifest"
+    },
+    {
+      "title": "Broadcast Receiver (com.facebook.lite.deviceid.FbLitePhoneIdRequestReceiver) is not Protected. ",
+      "description": "[android:exported=true]\nA Broadcast Receiver is found to be shared with other apps on the device therefore leaving it accessible to any other application on the device.",
+      "section": "manifest"
+    },
+    {
+      "title": "Broadcast Receiver (com.facebook.appupdate.DownloadCompleteReceiver) is not Protected. ",
+      "description": "[android:exported=true]\nA Broadcast Receiver is found to be shared with other apps on the device therefore leaving it accessible to any other application on the device.",
+      "section": "manifest"
+    },
+    {
+      "title": "Content Provider (com.facebook.lite.deviceid.FbLitePhoneIdProvider) is not Protected. ",
+      "description": "[android:exported=true]\nA Content Provider is found to be shared with other apps on the device therefore leaving it accessible to any other application on the device.",
+      "section": "manifest"
+    },
+    {
+      "title": "Broadcast Receiver (com.facebook.lite.FbnsIntentService$CallbackReceiver) is not Protected. ",
+      "description": "[android:exported=true]\nA Broadcast Receiver is found to be shared with other apps on the device therefore leaving it accessible to any other application on the device.",
+      "section": "manifest"
+    },
+    {
+      "title": "Broadcast Receiver (com.facebook.rti.push.service.MqttSystemBroadcastReceiver) is not Protected. ",
+      "description": "[android:exported=true]\nA Broadcast Receiver is found to be shared with other apps on the device therefore leaving it accessible to any other application on the device.",
+      "section": "manifest"
+    },
+    {
+      "title": "Content Provider (com.facebook.lite.photo.MediaContentProvider) is not Protected. ",
+      "description": "[android:exported=true]\nA Content Provider is found to be shared with other apps on the device therefore leaving it accessible to any other application on the device.",
+      "section": "manifest"
+    },
+    {
+      "title": "Content Provider (com.facebook.lite.diode.UserValuesProvider) is not Protected. ",
+      "description": "[android:exported=true]\nA Content Provider is found to be shared with other apps on the device therefore leaving it accessible to any other application on the device.",
+      "section": "manifest"
+    },
+    {
+      "title": "Content Provider (com.facebook.lite.diode.LiteUserValuesProvider) is not Protected. ",
+      "description": "[android:exported=true]\nA Content Provider is found to be shared with other apps on the device therefore leaving it accessible to any other application on the device.",
+      "section": "manifest"
+    },
+    {
+      "title": "Content Provider (com.facebook.lite.metainstallreferrer.InstallReferrerProvider) is not Protected. ",
+      "description": "[android:exported=true]\nA Content Provider is found to be shared with other apps on the device therefore leaving it accessible to any other application on the device.",
+      "section": "manifest"
+    },
+    {
+      "title": "Content Provider (com.facebook.lite.partneranalytics.LastUsedTimestampProvider) is not Protected. ",
+      "description": "[android:exported=true]\nA Content Provider is found to be shared with other apps on the device therefore leaving it accessible to any other application on the device.",
+      "section": "manifest"
+    },
+    {
+      "title": "Broadcast Receiver (com.facebook.lite.waotp.WAOtpCodeReceiver) is not Protected. ",
+      "description": "[android:exported=true]\nA Broadcast Receiver is found to be shared with other apps on the device therefore leaving it accessible to any other application on the device.",
+      "section": "manifest"
+    },
+    {
+      "title": "Broadcast Receiver (com.facebook.oxygen.preloads.sdk.firstparty.managedappcache.IsManagedAppReceiver) is Protected by a permission, but the protection level of the permission should be checked.",
+      "description": "Permission: com.facebook.appmanager.ACCESS [android:exported=true]\nA Broadcast Receiver is found to be shared with other apps on the device therefore leaving it accessible to any other application on the device. It is protected by a permission which is not defined in the analysed application. As a result, the protection level of the permission should be checked where it is defined. If it is set to normal or dangerous, a malicious application can request and obtain the permission and interact with the component. If it is set to signature, only applications signed with the same certificate can obtain the permission.",
+      "section": "manifest"
+    },
+    {
+      "title": "Service (com.facebook.secure.packagefinder.PackageFinderService) is not Protected. ",
+      "description": "[android:exported=true]\nA Service is found to be shared with other apps on the device therefore leaving it accessible to any other application on the device.",
+      "section": "manifest"
+    },
+    {
+      "title": "Activity (com.facebook.lite.loginWithFacebook.wrapper.CustomTabActivity) is not Protected. ",
+      "description": "[android:exported=true]\nAn Activity is found to be shared with other apps on the device therefore leaving it accessible to any other application on the device.",
+      "section": "manifest"
+    },
+    {
+      "title": "Activity-Alias (com.instagram.lite.stories.activities.ShareToIgStoriesAlias) is not Protected. ",
+      "description": "[android:exported=true]\nAn Activity-Alias is found to be shared with other apps on the device therefore leaving it accessible to any other application on the device.",
+      "section": "manifest"
+    },
+    {
+      "title": "Activity-Alias (com.instagram.lite.stories.activities.ShareToIgFeedAlias) is not Protected. ",
+      "description": "[android:exported=true]\nAn Activity-Alias is found to be shared with other apps on the device therefore leaving it accessible to any other application on the device.",
+      "section": "manifest"
+    },
+    {
+      "title": "Activity-Alias (com.instagram.lite.deeplinking.activities.E2EActivityAlias) is not Protected. ",
+      "description": "[android:exported=true]\nAn Activity-Alias is found to be shared with other apps on the device therefore leaving it accessible to any other application on the device.",
+      "section": "manifest"
+    },
+    {
+      "title": "Activity-Alias (com.instagram.lite.stories.activities.ShareToIgChatsAlias) is not Protected. ",
+      "description": "[android:exported=true]\nAn Activity-Alias is found to be shared with other apps on the device therefore leaving it accessible to any other application on the device.",
+      "section": "manifest"
+    },
+    {
+      "title": "Activity-Alias (com.instagram.lite.stories.activities.ShareTextToIgChatsAlias) is not Protected. ",
+      "description": "[android:exported=true]\nAn Activity-Alias is found to be shared with other apps on the device therefore leaving it accessible to any other application on the device.",
+      "section": "manifest"
+    },
+    {
+      "title": "Service (com.google.android.gms.auth.api.signin.RevocationBoundService) is Protected by a permission, but the protection level of the permission should be checked.",
+      "description": "Permission: com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION [android:exported=true]\nA Service is found to be shared with other apps on the device therefore leaving it accessible to any other application on the device. It is protected by a permission which is not defined in the analysed application. As a result, the protection level of the permission should be checked where it is defined. If it is set to normal or dangerous, a malicious application can request and obtain the permission and interact with the component. If it is set to signature, only applications signed with the same certificate can obtain the permission.",
+      "section": "manifest"
+    },
+    {
+      "title": "Broadcast Receiver (com.google.firebase.iid.FirebaseInstanceIdReceiver) is Protected by a permission, but the protection level of the permission should be checked.",
+      "description": "Permission: com.google.android.c2dm.permission.SEND [android:exported=true]\nA Broadcast Receiver is found to be shared with other apps on the device therefore leaving it accessible to any other application on the device. It is protected by a permission which is not defined in the analysed application. As a result, the protection level of the permission should be checked where it is defined. If it is set to normal or dangerous, a malicious application can request and obtain the permission and interact with the component. If it is set to signature, only applications signed with the same certificate can obtain the permission.",
+      "section": "manifest"
+    },
+    {
+      "title": "High Intent Priority (999) - {1} Hit(s)",
+      "description": "[android:priority]\nBy setting an intent priority higher than another intent, the app effectively overrides other requests.",
+      "section": "manifest"
+    },
+    {
+      "title": "The App uses an insecure Random Number Generator.",
+      "description": "The App uses an insecure Random Number Generator.\nhttps://github.com/MobSF/owasp-mstg/blob/master/Document/0x04g-Testing-Cryptography.md#weak-random-number-generators\n\nFiles:\nX/AnonymousClass043.java, line(s) 6\nX/AnonymousClass044.java, line(s) 3\nX/C015606r.java, line(s) 27\nX/C0BF.java, line(s) 5\nX/C0BQ.java, line(s) 9\nX/C0CN.java, line(s) 13",
+      "section": "code"
+    },
+    {
+      "title": "SHA-1 is a weak hash known to have hash collisions.",
+      "description": "SHA-1 is a weak hash known to have hash collisions.\nhttps://github.com/MobSF/owasp-mstg/blob/master/Document/0x04g-Testing-Cryptography.md#identifying-insecure-andor-deprecated-cryptographic-algorithms-mstg-crypto-4\n\nFiles:\nX/AnonymousClass054.java, line(s) 74",
+      "section": "code"
+    },
+    {
+      "title": "IP Address disclosure",
+      "description": "IP Address disclosure\n\n\nFiles:\nX/C00S.java, line(s) 6,8,7,9\nX/C020309b.java, line(s) 297",
+      "section": "code"
+    },
+    {
+      "title": "App can read/write to External Storage. Any App can read data written to External Storage.",
+      "description": "App can read/write to External Storage. Any App can read data written to External Storage.\nhttps://github.com/MobSF/owasp-mstg/blob/master/Document/0x05d-Testing-Data-Storage.md#external-storage\n\nFiles:\nX/C004701x.java, line(s) 60",
+      "section": "code"
+    },
+    {
+      "title": "This app may contain hardcoded secrets",
+      "description": "The following secrets were identified from the app. Ensure that these are not secrets or private information.\n\"google_api_key\" : \"AIzaSyBWJZPw7wVi-NQEViQV9ZnadO-xbX4S8o0\"\nRdBiQjfrXe1WnMMVVkuOoFfs8ri2eE\ngrX4Ta9HpZx6tSHkmCrvpApTQGo67CYDnvprLg5yRME=\naCdH+LpiG4fN07wpXtXKvOciocDANj0daLOJKNJ4fx4=\nuSEJtZCVlVzKr17Lzw8VPslkCkZYwQFmetlrfkmaQJI\nOaxNl9DzmpbAu1HcjBRq8oUlJBWeTEWmnftIpuLE0dY\nsXPIxiZ1lvokCdbRCr64p0GHvtNvywjWNQmqJtqWw8Q\nq4PO2G2cbkZhZ82+JgmRUyGMoAeozA+BSXVXQWB8XWQ=\nrAusqYUIziLdH2vjRhJ9iPN8Axi1QIsEeksvpaPpywQ\nzOWEMoPwpWBrD6z29z73mJHEioIOhPgR4ARENbOXnqI\nrn+WLLnmp9v3uDP7GPqbcaiRdd+UnCMrap73yz3yu/w=\nTuZz0WoA2PmrHxH826GLPqgB5xYhKwTR5X17cEgDRQI\ndiGVwiVYbubAI3RW4hB9xU8e/CH2GnkuvVFZE8zmgzI=\npA2oClnRcMqpUM8VwYxFTUejmyaYnYtkDs10W6cb9dw\ni1R0ZwdXk2ev6WLsW1iXdNyytsuVi570wNd9O6D5wkA\nk8zj7LE9R9iJ9bvvO2LLaoRUGkvMadXC5EX8RBVKE8w\nRKhpUi1Kl9bHcO1rS0FHy3ICrjOO2X6k5yEm\nF5OoLdx6B8GGOezxJY0QifKgn3FjXCyp54J8bPv3yfI\njriiCfLl5AQq3PaWv3Uemavb2hMrZhZ\nhe7AWhFEJyHnLDw6N74RdhwQXHsJRDBZvQMCNgOUEgQ\nykG4fdbRb6a4ItrViJAx0l43fmUg0SW4BmU\nICGRfpgmOUXIWcQ/HXPLQTkFPEFPoDyjvH7ohhQpjzs=\noC+voZLIy4HLE0FVT5wFtxzKKokLDRKY1oNkfJYe+98=\njYWbZ4GQZ28iGykpgUFoIDlGPXHb2sIWpDljhlYw\n3Occv5K3fs6f4TMEZqQMaEPOi26G1HRcRTaiMhLfbVg\nuUwZgwDOxcBXrQcntwu+kYFpkiVkOaezL0WYEZ3anJc=\nVSIRoP8NGnYBLRTCCPi6M3OQd3ZJc\nUiFEC5uxJuxVHjWkQvUXlGYGiGgpCQd79NeuopUpcNU\ngyMW5OL1dZSW0Hc2scNB9rSHSjgMRWYEf7gkZrysotY\n1RBv0Am3VA2bLMifS4uOCNDeaKSVc7CU\nAuYCk4ZRoWy5MJTr4GmbZSKv7vsGVtVR2oLiOKKp3qs\nK87oWBWM9UZfyddvDfoxL+8lpNyoUB2ptGtn0fv6G2Q=\nvybElaK24hv56tyQiWFXmLmGbCmgTEF57lU\nazGZDq3U2OPfsFdCgajvtrlaIKOQ8GSkAr92TLKbcjs\n9IujZx6JrDrZ5oYGBEroEyiA2x7wdavEUslqzXHMBoc\n7oVvh3Fck1xX0J5u42DHceCqMyIqewU2TWaJlChTsZA\nczD7n7zbifyJ6snZ1K5ViS5Gks5u2c9zL7OHrb0w\nXz5Q9DVYPJrmJjAqcfc0AEQIen4sYK2s\nW1BzWTPVNZBtrA45RvTcbkVphwqyUdZwQEL7X\nztXcjgEmmxMKYWXyXR1OtAW6codwAh6kiOzYzpxMCM4\nrbPBrH2K54ycBnaWuvI8pTxd7CIb\nQNc4oAwpdTOEIfpXWujgRZDGvKl0dunabP0fAVcI\nHC4rwCH0AxqzQcvYDrHg5ikHBl2GnUuRnJLwuJJyt8o\nZWkE4zW88gcERR0YSGDghDZDer3EdbcpWmloH7l3\nWoiWRyIOVNa9ihaBciRSC7XHjliYS9VwUGOIud4PB18=\n62Yjx8iYhpF3VA6BQQvyUObpLzjXx0Gs5PEm1cLJaf4\nWd8xe/qfTwq3ylFNd3IpaqLHZbh2ZNCLluVzmeNkcpw=\ncGuxAXyFXFkWm61cF4HPWX8S0srS9j0aSqN0k4AP+4A=\n5T7TTXxkmQH5fdzat3ewWNAAuwHC9eF2\n4dJKibgNvwschNsyH9YBK3Hwl5zTIkQlBgZu10E\nJm4bl26QMphvIVgzVUeQb6f37Ys3IKRmCw0LBgLJBzs\n58qRu/uxh4gFezqAcERupSkRYBlBAvfcw7mEjGPLnNU=\n2eC54WVokOBCMfraLI5w5AkPzV4OhG2rUnfhWHKBM0M\njNOc7mDzYOmJnDzPufesFxNPsjV4IeXH4tjnjOCHkUA\nZjFWitD4QhI3DDX7jC4kAdDOffGgtI0Kqf0Mg71Nkzs\nui1sfL4sZoq87KETlWIIg1GPbvD5YRhwq73X28NIPXA\nMCluzmTgXDuTHyG9AnpK6nb1ffPe\nXdkQEeiVeIyDkvBEAHtGJKKHfdsrOFf9te68UpyJVhA\nape1HIIZ6T5d7GS61YBs3rD4NVvkfnVwELcCRW4Bqv0=\njJXMpyOWBPAVUW5TdC0UOQCtSXS0dPbHY00jE7I1oqg\nDBauJfiBkYkRdrNvtqHVxpa5W1kE4QhelLDRkQ7Syv8\nBHW1qv5BLCwc378Tf0pJ6g2Mrz6xkMRE\nBhbXF71VGdruXI2K92clfscrAA8xTQxV0mTVQSyTzJM\nj7DW1GBqpKusFNd9HZfVNAhgyfgQRaoVc\novbQAw7LTrM4PSNadgRBwp4vfR5ma3mkb1x\nQH5XpDABqOLMQmPoU1yYkDqj4encoo\nb2sRSFyeAdgq4NbTDsF6EuDfHreyS9x2Pp7oKe8QclI\n6PDrONEnh3P7htSccijrhAA8B9sXJeGvGHy\noSjSY8pqhXpum64U6nRyis9rV9XfVU3BgyBK6ru6RS8\nY5Hqye7Bbux7I1qFFmbE6EqILj2ssTFQB9Ss6LwpmGE\n5MCO54QyiJ31mua72pgMV7lET8XxQmxVGsxMmN3dAkA\nilevJuB7FM2hbqbNvEalC0sSLlEcDgidA6sgzc\n3zm83GueFdZc03peMLTszjjIs7veieqaGSvqMt6075s\ntLXzXE27lXmkgnQiBquXXJL69T1ZBOt8Uk2MjhDs\nuMnSimFvgxSFwj8TbauRsJHJmqA9ylcIGiXRTzvBn6E\nYdNexVtjCN6dzf64Ix6i9ToxImvIA8AL7NhSaND5tpE\n2v68LjdrY5QoGvulTHKywirmgTy2Oe\nsFuP1YxKZhUvSVD07qxH67dGzFAoeykLoFN3PHnQbsc\nC5+lpZ7tcVwmwQIMcRtPbsQtWLABXhQzejna0wHFr8M=\nj6dyXYfIkddeJxE4pzmilaZ2S4qYC9CwaCMxfzg1zTY\nZiIZ7fdUdXcbGMNL6M656x4mTCC9kdSoSNBOifLrBAA\nTMinTbXc5WFYgsXN8isdVqC2EACEZpcdz5s7I1bO\noXiTMLDip81kTvgXrtXtypfecxU3vmuNPlCfkOM\nqadsRSPy8q2oOtZucRAyNlbBCyrbDQYWnD6ZESwR0vs",
+      "section": "secrets"
+    }
+  ],
+  "info": [
+    {
+      "title": "Certificate pinning expires on 2026-08-27",
+      "description": "Scope:\nfacebook.com\nfbcdn.net\nfbsbx.com\nfacebookcorewwwi.onion\nfbcdn23dssr3jqnq.onion\nfbsbx2q4mvcl63pw.onion\ninstagram.com\ncdninstagram.com\nworkplace.com\noculus.com\nfacebookvirtualassistant.com\ndiscoverapp.com\nfreebasics.com\ninternet.org\nviewpointsfromfacebook.com\nmeta.com\nh.facebook.com\nl.facebook.com\nl.alpha.facebook.com\nlm.facebook.com\nl.instagram.com\n\nAfter this date pinning will be disabled. [Pin: x4QzPSC810K5/cMjb05Qm4k3Bw5zBn4lTdO/nEW/Td4= Digest: SHA-256,Pin: ICGRfpgmOUXIWcQ/HXPLQTkFPEFPoDyjvH7ohhQpjzs= Digest: SHA-256,Pin: grX4Ta9HpZx6tSHkmCrvpApTQGo67CYDnvprLg5yRME= Digest: SHA-256,Pin: 58qRu/uxh4gFezqAcERupSkRYBlBAvfcw7mEjGPLnNU= Digest: SHA-256,Pin: r/mIkG3eEpVdm+u/ko/cwxzOMo1bk4TyHIlByibiA5E= Digest: SHA-256,Pin: i7WTqTvh0OioIruIfFR4kMPnBqrS2rdiVPl/s2uC/CY= Digest: SHA-256,Pin: uUwZgwDOxcBXrQcntwu+kYFpkiVkOaezL0WYEZ3anJc= Digest: SHA-256,Pin: WoiWRyIOVNa9ihaBciRSC7XHjliYS9VwUGOIud4PB18= Digest: SHA-256,Pin: Wd8xe/qfTwq3ylFNd3IpaqLHZbh2ZNCLluVzmeNkcpw= Digest: SHA-256,Pin: ape1HIIZ6T5d7GS61YBs3rD4NVvkfnVwELcCRW4Bqv0= Digest: SHA-256,Pin: oC+voZLIy4HLE0FVT5wFtxzKKokLDRKY1oNkfJYe+98= Digest: SHA-256,Pin: K87oWBWM9UZfyddvDfoxL+8lpNyoUB2ptGtn0fv6G2Q= Digest: SHA-256,Pin: cGuxAXyFXFkWm61cF4HPWX8S0srS9j0aSqN0k4AP+4A= Digest: SHA-256,Pin: aCdH+LpiG4fN07wpXtXKvOciocDANj0daLOJKNJ4fx4= Digest: SHA-256,Pin: rn+WLLnmp9v3uDP7GPqbcaiRdd+UnCMrap73yz3yu/w= Digest: SHA-256,Pin: C5+lpZ7tcVwmwQIMcRtPbsQtWLABXhQzejna0wHFr8M= Digest: SHA-256,Pin: diGVwiVYbubAI3RW4hB9xU8e/CH2GnkuvVFZE8zmgzI= Digest: SHA-256,Pin: q4PO2G2cbkZhZ82+JgmRUyGMoAeozA+BSXVXQWB8XWQ= Digest: SHA-256]",
+      "section": "network"
+    },
+    {
+      "title": "The App logs information. Sensitive information should never be logged.",
+      "description": "The App logs information. Sensitive information should never be logged.\nhttps://github.com/MobSF/owasp-mstg/blob/master/Document/0x05d-Testing-Data-Storage.md#logs\n\nFiles:\nX/AbstractC004101r.java, line(s) 9,13\nX/AbstractC02330Ao.java, line(s) 95,105,27,99\nX/AnonymousClass000.java, line(s) 99\nX/AnonymousClass008.java, line(s) 10,15\nX/AnonymousClass022.java, line(s) 41\nX/AnonymousClass086.java, line(s) 51,56,125,127,154,137,145\nX/AnonymousClass094.java, line(s) 25,47,53,58\nX/C008503p.java, line(s) 154,169\nX/C02230Ad.java, line(s) 12,39,45,48\nX/C02320An.java, line(s) 27,25\nX/C02350Aw.java, line(s) 244,265,278,294,297,324,333,107,134,188,214,316,367\nX/C02590By.java, line(s) 95,139\nX/C02600Bz.java, line(s) 89,102\nX/C02Y.java, line(s) 60\nX/C05A.java, line(s) 51,65,87,129,148\nX/C06N.java, line(s) 270,154,203,327\nX/C07R.java, line(s) 130,97,139,183,195,201,207,210\nX/C08S.java, line(s) 31,46,51,61,41,56\nX/C09R.java, line(s) 22,25\nX/C0AM.java, line(s) 140,728,731,67,85,87,105,131,536,596,634,650,658,661,664,670,712,718,721,724\nX/C0AX.java, line(s) 16,26\nX/C0AY.java, line(s) 25,39\nX/C0AZ.java, line(s) 21,27,68,79,99\nX/C0B3.java, line(s) 23,27,32,39,47\nX/C0BH.java, line(s) 579,133,152,158,558,567\nX/C0C0.java, line(s) 208,36,88\nX/C0C6.java, line(s) 75\nX/C0CF.java, line(s) 93\nX/JobServiceEngineC005002a.java, line(s) 43",
+      "section": "code"
+    }
+  ],
+  "secure": [
+    {
+      "title": "Domain config is securely configured to disallow clear text traffic to these domains in scope",
+      "description": "Scope:\nfacebook.com\nfbcdn.net\nfbsbx.com\nfacebookcorewwwi.onion\nfbcdn23dssr3jqnq.onion\nfbsbx2q4mvcl63pw.onion\ninstagram.com\ncdninstagram.com\nworkplace.com\noculus.com\nfacebookvirtualassistant.com\ndiscoverapp.com\nfreebasics.com\ninternet.org\nviewpointsfromfacebook.com\nmeta.com\nh.facebook.com\nl.facebook.com\nl.alpha.facebook.com\nlm.facebook.com\nl.instagram.com\n\n",
+      "section": "network"
+    },
+    {
+      "title": "Certificate pinning does not have an expiry",
+      "description": "Scope:\nh.facebook.com\nl.facebook.com\nl.alpha.facebook.com\nlm.facebook.com\nl.instagram.com\n\nEnsure that pins are updated before certificate expire. []",
+      "section": "network"
+    },
+    {
+      "title": "This App uses SSL certificate pinning to detect or  prevent MITM attacks in secure communication channel.",
+      "description": "This App uses SSL certificate pinning to detect or  prevent MITM attacks in secure communication channel.\nhttps://github.com/MobSF/owasp-mstg/blob/master/Document/0x05g-Testing-Network-Communication.md#testing-custom-certificate-stores-and-certificate-pinning-mstg-network-4\n\nFiles:\nX/AnonymousClass079.java, line(s) 23,26\nX/C02C.java, line(s) 70,69,68",
+      "section": "code"
+    },
+    {
+      "title": "Firebase Remote Config disabled",
+      "description": "Firebase Remote Config is disabled for https://firebaseremoteconfig.googleapis.com/v1/projects/622912139302/namespaces/firebase:fetch?key=AIzaSyBWJZPw7wVi-NQEViQV9ZnadO-xbX4S8o0. This is indicated by the response: The response code is 403",
+      "section": "firebase"
+    },
+    {
+      "title": "This application has no privacy trackers",
+      "description": "This application does not include any user or device trackers. Unable to find trackers during static analysis.",
+      "section": "trackers"
+    }
+  ],
+  "hotspot": [
+    {
+      "title": "Found 22 critical permission(s)",
+      "description": "Ensure that these permissions are required by the application.\n\nandroid.permission.ACCESS_COARSE_LOCATION (dangerous): coarse (network-based) location - Access coarse location sources, such as the mobile network database, to determine an approximate phone location, where available. Malicious applications can use this to determine approximately where you are.\n\nandroid.permission.ACCESS_FINE_LOCATION (dangerous): fine (GPS) location - Access fine location sources, such as the Global Positioning System on the phone, where available. Malicious applications can use this to determine where you are and may consume additional battery power.\n\nandroid.permission.CALL_PHONE (dangerous): directly call phone numbers - Allows the application to call phone numbers without your intervention. Malicious applications may cause unexpected calls on your phone bill. Note that this does not allow the application to call emergency numbers.\n\nandroid.permission.CAMERA (dangerous): take pictures and videos - Allows application to take pictures and videos with the camera. This allows the application to collect images that the camera is seeing at any time.\n\nandroid.permission.GET_TASKS (dangerous): retrieve running applications - Allows application to retrieve information about currently and recently running tasks. May allow malicious applications to discover private information about other applications.\n\nandroid.permission.READ_CALENDAR (dangerous): read calendar events - Allows an application to read all of the calendar events stored on your phone. Malicious applications can use this to send your calendar events to other people.\n\nandroid.permission.READ_CONTACTS (dangerous): read contact data - Allows an application to read all of the contact (address) data stored on your phone. Malicious applications can use this to send your data to other people.\n\nandroid.permission.GET_ACCOUNTS (dangerous): list accounts - Allows access to the list of accounts in the Accounts Service.\n\nandroid.permission.AUTHENTICATE_ACCOUNTS (dangerous): act as an account authenticator - Allows an application to use the account authenticator capabilities of the Account Manager, including creating accounts as well as obtaining and setting their passwords.\n\nandroid.permission.MANAGE_ACCOUNTS (dangerous): manage the accounts list - Allows an application to perform operations like adding and removing accounts and deleting their password.\n\nandroid.permission.READ_PHONE_STATE (dangerous): read phone state and identity - Allows the application to access the phone features of the device. An application with this permission can determine the phone number and serial number of this phone, whether a call is active, the number that call is connected to and so on.\n\nandroid.permission.READ_PHONE_NUMBERS (dangerous): allows reading of the device's phone number(s). - Allows read access to the device's phone number(s). This is a subset of the capabilities granted by READ_PHONE_STATE but is exposed to instant applications.\n\nandroid.permission.READ_PROFILE (dangerous): read the user's personal profile data - Allows an application to read the user's personal profile data.\n\nandroid.permission.RECORD_AUDIO (dangerous): record audio - Allows application to access the audio record path.\n\nandroid.permission.SYSTEM_ALERT_WINDOW (dangerous): display system-level alerts - Allows an application to show system-alert windows. Malicious applications can take over the entire screen of the phone.\n\nandroid.permission.WRITE_CALENDAR (dangerous): add or modify calendar events and send emails to guests - Allows an application to add or change the events on your calendar, which may send emails to guests. Malicious applications can use this to erase or modify your calendar events or to send emails to guests.\n\nandroid.permission.WRITE_CONTACTS (dangerous): write contact data - Allows an application to modify the contact (address) data stored on your phone. Malicious applications can use this to erase or modify your contact data.\n\nandroid.permission.WRITE_EXTERNAL_STORAGE (dangerous): read/modify/delete external storage contents - Allows an application to write to external storage.\n\nandroid.permission.READ_MEDIA_VISUAL_USER_SELECTED (dangerous): allows reading user-selected image or video files from external storage. - Allows an application to read image or video files from external storage that a user has selected via the permission prompt photo picker. Apps can check this permission to verify that a user has decided to use the photo picker, instead of granting access to READ_MEDIA_IMAGES or READ_MEDIA_VIDEO . It does not prevent apps from accessing the standard photo picker manually. This permission should be requested alongside READ_MEDIA_IMAGES and/or READ_MEDIA_VIDEO , depending on which type of media is desired.\n\nandroid.permission.POST_NOTIFICATIONS (dangerous): allows an app to post notifications. - Allows an app to post notifications\n\nandroid.permission.READ_MEDIA_IMAGES (dangerous): allows reading image files from external storage. - Allows an application to read image files from external storage.\n\nandroid.permission.READ_MEDIA_VIDEO (dangerous): allows reading video files from external storage. - Allows an application to read video files from external storage.",
+      "section": "permissions"
+    }
+  ],
+  "total_trackers": 432,
+  "trackers": 0,
+  "security_score": 53,
+  "app_name": "Instagram Lite",
+  "file_name": "instagramlite.apk",
+  "hash": "296e623e1ab7aea092d5bc9eeec7f841",
+  "version_name": "475.0.0.15.104",
+  "version": "v4.4.2",
+  "title": "AppSec Scorecard",
+  "efr01": false
+}

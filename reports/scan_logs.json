@@ -1,0 +1,214 @@
+{
+  "logs": [
+    {
+      "timestamp": "2025-09-06 04:11:32",
+      "status": "Generating Hashes",
+      "exception": null
+    },
+    {
+      "timestamp": "2025-09-06 04:11:32",
+      "status": "Extracting APK",
+      "exception": null
+    },
+    {
+      "timestamp": "2025-09-06 04:11:32",
+      "status": "Unzipping",
+      "exception": null
+    },
+    {
+      "timestamp": "2025-09-06 04:11:32",
+      "status": "Parsing APK with androguard",
+      "exception": null
+    },
+    {
+      "timestamp": "2025-09-06 04:11:32",
+      "status": "Extracting APK features using aapt/aapt2",
+      "exception": null
+    },
+    {
+      "timestamp": "2025-09-06 04:11:32",
+      "status": "Getting Hardcoded Certificates/Keystores",
+      "exception": null
+    },
+    {
+      "timestamp": "2025-09-06 04:11:35",
+      "status": "Parsing AndroidManifest.xml",
+      "exception": null
+    },
+    {
+      "timestamp": "2025-09-06 04:11:35",
+      "status": "Extracting Manifest Data",
+      "exception": null
+    },
+    {
+      "timestamp": "2025-09-06 04:11:35",
+      "status": "Manifest Analysis Started",
+      "exception": null
+    },
+    {
+      "timestamp": "2025-09-06 04:11:35",
+      "status": "Reading Network Security config from fb_network_security_config.xml",
+      "exception": null
+    },
+    {
+      "timestamp": "2025-09-06 04:11:35",
+      "status": "Parsing Network Security config",
+      "exception": null
+    },
+    {
+      "timestamp": "2025-09-06 04:11:35",
+      "status": "Performing Static Analysis on: Instagram Lite (com.instagram.lite)",
+      "exception": null
+    },
+    {
+      "timestamp": "2025-09-06 04:11:36",
+      "status": "Fetching Details from Play Store: com.instagram.lite",
+      "exception": null
+    },
+    {
+      "timestamp": "2025-09-06 04:11:36",
+      "status": "Checking for Malware Permissions",
+      "exception": null
+    },
+    {
+      "timestamp": "2025-09-06 04:11:36",
+      "status": "Fetching icon path",
+      "exception": null
+    },
+    {
+      "timestamp": "2025-09-06 04:11:36",
+      "status": "Library Binary Analysis Started",
+      "exception": null
+    },
+    {
+      "timestamp": "2025-09-06 04:11:36",
+      "status": "Analyzing apktool_out/lib/arm64-v8a/libsuperpack-jni.so",
+      "exception": null
+    },
+    {
+      "timestamp": "2025-09-06 04:11:36",
+      "status": "Analyzing apktool_out/lib/arm64-v8a/libbreakpad_cpp_helper.so",
+      "exception": null
+    },
+    {
+      "timestamp": "2025-09-06 04:11:36",
+      "status": "Analyzing lib/arm64-v8a/libsuperpack-jni.so",
+      "exception": null
+    },
+    {
+      "timestamp": "2025-09-06 04:11:36",
+      "status": "Analyzing lib/arm64-v8a/libbreakpad_cpp_helper.so",
+      "exception": null
+    },
+    {
+      "timestamp": "2025-09-06 04:11:36",
+      "status": "Reading Code Signing Certificate",
+      "exception": null
+    },
+    {
+      "timestamp": "2025-09-06 04:11:36",
+      "status": "Running APKiD 3.0.0",
+      "exception": null
+    },
+    {
+      "timestamp": "2025-09-06 04:11:38",
+      "status": "Detecting Trackers",
+      "exception": null
+    },
+    {
+      "timestamp": "2025-09-06 04:11:39",
+      "status": "Decompiling APK to Java with JADX",
+      "exception": null
+    },
+    {
+      "timestamp": "2025-09-06 04:11:49",
+      "status": "Converting DEX to Smali",
+      "exception": null
+    },
+    {
+      "timestamp": "2025-09-06 04:11:49",
+      "status": "Code Analysis Started on - java_source",
+      "exception": null
+    },
+    {
+      "timestamp": "2025-09-06 04:11:50",
+      "status": "Android SBOM Analysis Completed",
+      "exception": null
+    },
+    {
+      "timestamp": "2025-09-06 04:11:52",
+      "status": "Android SAST Completed",
+      "exception": null
+    },
+    {
+      "timestamp": "2025-09-06 04:11:52",
+      "status": "Android API Analysis Started",
+      "exception": null
+    },
+    {
+      "timestamp": "2025-09-06 04:11:53",
+      "status": "Android API Analysis Completed",
+      "exception": null
+    },
+    {
+      "timestamp": "2025-09-06 04:11:53",
+      "status": "Android Permission Mapping Started",
+      "exception": null
+    },
+    {
+      "timestamp": "2025-09-06 04:12:05",
+      "status": "Android Permission Mapping Completed",
+      "exception": null
+    },
+    {
+      "timestamp": "2025-09-06 04:12:05",
+      "status": "Android Behaviour Analysis Started",
+      "exception": null
+    },
+    {
+      "timestamp": "2025-09-06 04:12:07",
+      "status": "Android Behaviour Analysis Completed",
+      "exception": null
+    },
+    {
+      "timestamp": "2025-09-06 04:12:07",
+      "status": "Extracting Emails and URLs from Source Code",
+      "exception": null
+    },
+    {
+      "timestamp": "2025-09-06 04:12:08",
+      "status": "Email and URL Extraction Completed",
+      "exception": null
+    },
+    {
+      "timestamp": "2025-09-06 04:12:08",
+      "status": "Extracting String data from APK",
+      "exception": null
+    },
+    {
+      "timestamp": "2025-09-06 04:12:08",
+      "status": "Extracting String data from SO",
+      "exception": null
+    },
+    {
+      "timestamp": "2025-09-06 04:12:08",
+      "status": "Extracting String data from Code",
+      "exception": null
+    },
+    {
+      "timestamp": "2025-09-06 04:12:08",
+      "status": "Extracting String values and entropies from Code",
+      "exception": null
+    },
+    {
+      "timestamp": "2025-09-06 04:12:08",
+      "status": "Performing Malware check on extracted domains",
+      "exception": null
+    },
+    {
+      "timestamp": "2025-09-06 04:12:10",
+      "status": "Saving to Database",
+      "exception": null
+    }
+  ]
+}

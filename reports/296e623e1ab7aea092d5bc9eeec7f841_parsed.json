@@ -1,0 +1,143 @@
+{
+  "malware_lookup": {
+    "virustotal": "https://www.virustotal.com/gui/file/aeba7972e8c33c73821d5edc6d606bcf09ed842acc1a5264a184c49b68dde015",
+    "triage": "https://tria.ge/s?q=aeba7972e8c33c73821d5edc6d606bcf09ed842acc1a5264a184c49b68dde015",
+    "metadefender": "https://metadefender.com/results/hash/aeba7972e8c33c73821d5edc6d606bcf09ed842acc1a5264a184c49b68dde015",
+    "hybrid_analysis": "https://www.hybrid-analysis.com/search?query=aeba7972e8c33c73821d5edc6d606bcf09ed842acc1a5264a184c49b68dde015"
+  },
+  "apkid_analysis": [
+    {
+      "dex": "classes.dex",
+      "detections": "FINDINGS DETAILS Anti-VM Code Build.FINGERPRINT check Compiler unknown (please file detection issue!)",
+      "findings": "Anti-VM Code",
+      "details": "Build.FINGERPRINT check"
+    },
+    {
+      "dex": "Anti-VM Code",
+      "detections": "Build.FINGERPRINT check"
+    },
+    {
+      "dex": "Compiler",
+      "detections": "unknown (please file detection issue!)"
+    }
+  ],
+  "behaviour_analysis": [
+    {
+      "rule id": "00091",
+      "behaviour": "Retrieve data from broadcast",
+      "label": "collection",
+      "files": "X/AnonymousClass061.java X/C02M.java"
+    },
+    {
+      "rule id": "00013",
+      "behaviour": "Read file and put it into a stream",
+      "label": "file",
+      "files": "Show Files X/AnonymousClass040.java X/C007103a.java X/C02430Bh.java X/C02570Bw.java X/C05C.java X/C0BH.java X/C0C2.java X/C0CO.java X/C0CY.java"
+    },
+    {
+      "rule id": "00028",
+      "behaviour": "Read file from assets directory",
+      "label": "file",
+      "files": "X/C0AM.java"
+    },
+    {
+      "rule id": "00079",
+      "behaviour": "Hide the current app's icon",
+      "label": "evasion",
+      "files": "X/C07R.java"
+    },
+    {
+      "rule id": "00121",
+      "behaviour": "Create a directory",
+      "label": "file command",
+      "files": "X/C07R.java"
+    },
+    {
+      "rule id": "00004",
+      "behaviour": "Get filename and put it to JSON object",
+      "label": "file collection",
+      "files": "X/C0BJ.java"
+    },
+    {
+      "rule id": "00162",
+      "behaviour": "Create InetSocketAddress object and connecting to it",
+      "label": "socket",
+      "files": "X/C09K.java"
+    },
+    {
+      "rule id": "00163",
+      "behaviour": "Create new Socket and connecting to it",
+      "label": "socket",
+      "files": "X/C09K.java"
+    },
+    {
+      "rule id": "00022",
+      "behaviour": "Open a file from given absolute path of the file",
+      "label": "file",
+      "files": "Show Files X/C004701x.java X/C015606r.java X/C08P.java X/C0CO.java"
+    },
+    {
+      "rule id": "00108",
+      "behaviour": "Read the input stream from given URL",
+      "label": "network command",
+      "files": "X/C04C.java"
+    },
+    {
+      "rule id": "00012",
+      "behaviour": "Read data and put it into a buffer stream",
+      "label": "file",
+      "files": "X/C0CO.java"
+    }
+  ],
+  "domain_malware_check": [
+    {
+      "domain": "www.facebook.com",
+      "status": "ok",
+      "geolocation": "IP: 57.144.210.1 Country: United States of America Region: California City: Palo Alto Latitude: 37.441879 Longitude: -122.143021 View: Google Map"
+    },
+    {
+      "domain": "www.android.com",
+      "status": "ok",
+      "geolocation": "IP: 142.250.192.174 Country: United States of America Region: California City: Mountain View Latitude: 37.405991 Longitude: -122.078514 View: Google Map"
+    },
+    {
+      "domain": "m.instagram.com",
+      "status": "ok",
+      "geolocation": "IP: 57.144.210.34 Country: United States of America Region: California City: Palo Alto Latitude: 37.441879 Longitude: -122.143021 View: Google Map"
+    },
+    {
+      "domain": "www.instagram.com",
+      "status": "ok",
+      "geolocation": "IP: 57.144.210.34 Country: United States of America Region: California City: Palo Alto Latitude: 37.441879 Longitude: -122.143021 View: Google Map"
+    },
+    {
+      "domain": "schemas.android.com",
+      "status": "ok",
+      "geolocation": "No Geolocation information available."
+    },
+    {
+      "domain": "instagram.com",
+      "status": "ok",
+      "geolocation": "IP: 57.144.210.34 Country: United States of America Region: California City: Palo Alto Latitude: 37.441879 Longitude: -122.143021 View: Google Map"
+    }
+  ],
+  "urls": [
+    {
+      "url": "www.facebook.com",
+      "file": "X/C0C3.java"
+    },
+    {
+      "url": "http://www.android.com/",
+      "file": "X/C02350Aw.java"
+    },
+    {
+      "url": "http://schemas.android.com/apk/res/android",
+      "file": "X/C07Z.java"
+    },
+    {
+      "url": "https://m.instagram.com https://www.instagram.com https://instagram.com/.well-known/assetlinks.json",
+      "file": "Android String Resource"
+    }
+  ],
+  "emails": []
+}

@@ -1,0 +1,46 @@
+{
+  "malware_lookup": {
+    "virustotal": "https://www.virustotal.com/gui/file/5cefc51fce9bd760b92ab2340477f4dda84b4ae0c5d04a8c9493e4fe34fab7c5",
+    "triage": "https://tria.ge/s?q=5cefc51fce9bd760b92ab2340477f4dda84b4ae0c5d04a8c9493e4fe34fab7c5",
+    "metadefender": "https://metadefender.com/results/hash/5cefc51fce9bd760b92ab2340477f4dda84b4ae0c5d04a8c9493e4fe34fab7c5",
+    "hybrid_analysis": "https://www.hybrid-analysis.com/search?query=5cefc51fce9bd760b92ab2340477f4dda84b4ae0c5d04a8c9493e4fe34fab7c5"
+  },
+  "apkid_analysis": [
+    {
+      "dex": "classes.dex",
+      "detections": "FINDINGS DETAILS Compiler dx (possible dexmerge) Manipulator Found dexmerge",
+      "findings": "Compiler",
+      "details": "dx (possible dexmerge)"
+    },
+    {
+      "dex": "Compiler",
+      "detections": "dx (possible dexmerge)"
+    },
+    {
+      "dex": "Manipulator Found",
+      "detections": "dexmerge"
+    }
+  ],
+  "behaviour_analysis": [
+    {
+      "rule id": "00022",
+      "behaviour": "Open a file from given absolute path of the file",
+      "label": "file",
+      "files": "jakhar/aseem/diva/InsecureDataStorage4Activity.java"
+    }
+  ],
+  "domain_malware_check": [
+    {
+      "domain": "payatu.com",
+      "status": "ok",
+      "geolocation": "IP: 104.26.11.237 Country: United States of America Region: California City: San Francisco Latitude: 37.775700 Longitude: -122.395203 View: Google Map"
+    }
+  ],
+  "urls": [
+    {
+      "url": "http://payatu.com",
+      "file": "jakhar/aseem/diva/APICreds2Activity.java"
+    }
+  ],
+  "emails": []
+}
